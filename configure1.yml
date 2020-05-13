@@ -1,0 +1,18 @@
+---
+
+## playbook to configure things
+
+- hosts: CSRRouters
+  tasks:
+    - name: configure a single command
+      ios_config:
+        lines: ntp server 9.9.9.9
+    
+    - name: configure multi lines of code
+      ios_config:
+        src: "~/afne/configs/config1.txt"
+
+    - name: save config always
+      ios_config:
+        save_when: always
+        

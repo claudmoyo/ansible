@@ -1,0 +1,5 @@
+---
+#default values for nxos connectivity
+ansible_user: admin
+ansible_password: Tk12345+
+ansible_network_os: nxos

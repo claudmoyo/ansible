@@ -1,0 +1,19 @@
+
+## OUTPUT FROM SHOW COMMANDS for: BranchB 
+
+############ show clock #####################################
+
+*19:11:34.638 UTC Mon May 11 2020
+
+############ show users #####################################
+
+Line       User       Host(s)              Idle       Location
+*  1 vty 0     claudmoyo  idle                 00:00:00 192.168.100.11
+
+  Interface    User               Mode         Idle     Peer Address
+
+############ show ip interface brief | exc admin #####################################
+
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet1       192.168.100.91  YES NVRAM  up                    up
+

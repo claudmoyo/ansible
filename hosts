@@ -1,0 +1,11 @@
+
+## Ansible Hosts File 
+
+[CSRRouters]
+BranchA ansible_host=192.168.100.90
+BranchB ansible_host=192.168.100.91
+
+[NXOS]
+n7k1 ansible_host=192.168.100.93
+n7k2 ansible_host=192.168.100.94
+

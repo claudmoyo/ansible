@@ -1,0 +1,10 @@
+---
+
+## playbook to configure Nexus
+
+- hosts: NXOS
+  tasks:
+    - name: configure a single command nexus
+      nxos_config:
+        lines: ntp server 9.9.9.9
+        save_when: modified

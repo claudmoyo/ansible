@@ -1,0 +1,14 @@
+---
+##playbook to show version on ios
+- hosts: CSRRouters
+  tasks:
+    - name: show version
+      ios_command:
+        commands: show run
+      register: config
+
+    - name: save output to ~/afne/backups
+      copy:
+        content: "{{config.stdout[0]}}"
+        dest: "~/afne/backups/{{inventory_hostname}}-backup.txt"
+    

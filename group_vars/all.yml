@@ -1,0 +1,15 @@
+---
+
+  ## Default connectivity variables
+
+ansible_connection: network_cli
+ansible_network_os: nxos
+ansible_network_os: ios
+ansible_user: claudmoyo
+ansible_password: Tk12345+
+
+
+##Global config variables
+
+ntp:
+  server1: 10.10.10.10
