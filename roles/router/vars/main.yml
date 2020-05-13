@@ -1,0 +1,10 @@
+---
+routers:
+  - hostname: BranchA
+    loopbackip: 1.1.1.1 255.255.255.255
+    loopbackip1: 10.10.10.10 255.255.255.255
+ 
+  - hostname: BranchB
+    loopbackip: 2.2.2.2 255.255.255.255
+    loopbackip1: 20.20.20.20 255.255.255.255
+    

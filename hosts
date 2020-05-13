@@ -9,3 +9,10 @@ BranchB ansible_host=192.168.100.91
 n7k1 ansible_host=192.168.100.93
 n7k2 ansible_host=192.168.100.94
 
+[WLC]
+192.168.100.96
+192.168.100.97
+
+[BIG-IP]
+
+[all_vars]

@@ -1,0 +1,44 @@
+---
+  #playbook to run f5 basic configurations
+- name: F5 Ansible
+  hosts: BIG-IP
+  gather_facts: False
+
+  tasks:
+    - name: set the hostname of the BIGIP device
+      bigip_hostname:
+        hostname: f5.claud.local
+        provider:
+          user: admin
+          password: admin
+          server: 192.168.100.100
+          server_port: 443
+          validate_certs: no
+      delegate_to: localhost
+    
+      - name: save the running config of the BIG-IP
+        bigip_config:
+          save: yes
+          provider:
+            user: admin
+            password: admin
+           server: 192.168.100.100
+          server_port: 443
+          validate_certs: no
+        delegate_to: localhost
+      
+      -name: show some stu8uff
+        bigip_command:
+          commands:
+            - tmsh list sys
+          provider:
+            user: admin
+            password: admin
+           server: 192.168.100.100
+          server_port: 443
+          validate_certs: no
+        delegate_to: localhost
+
+
+
+

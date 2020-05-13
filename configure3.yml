@@ -1,0 +1,13 @@
+##Push the templated configs to routers
+---
+  - hosts: CSRRouters
+
+    tasks:
+
+      - name: Push templated config to CSR Routers
+        ios_config:
+          src: "./configs/{{inventory_hostname}}.txt"
+
+      - name: save the config
+        ios_config:
+          save_when: always
