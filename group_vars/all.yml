@@ -6,7 +6,7 @@ ansible_connection: network_cli
 ansible_network_os: nxos
 ansible_network_os: ios
 ansible_user: claudmoyo
-ansible_password: Tk12345+
+ansible_password: pass@123
 
 
 ##Global config variables
